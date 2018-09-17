@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         printerClass="Codedungeon\PHPUnitPrettyResultPrinter\Printer"
+         stopOnFailure="true">
+    <testsuites>
+        <testsuite name="Laravel API Services test suite">
+            <directory>./tests/</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <env name="APP_KEY" value="base64:UHvU5nEx+8g72n/R9dZSHW/sk52YiHDkadDkiFHB7kM="/>
+        <env name="SITE_BRAND" value="example.co.uk"/>
+        <env name="APP_ENV" value="testing"/>
+        <env name="APP_DEBUG" value="true"/>
+        <env name="DB_DATABASE" value=":memory:"/>
+        <env name="DB_CONNECTION" value="sqlite"/>
+    </php>
+</phpunit>

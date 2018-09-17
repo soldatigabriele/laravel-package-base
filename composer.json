@@ -1,0 +1,36 @@
+{
+    "name": "saas-management/laravel-quiz",
+    "description": "Allows to create a quiz",
+    "authors": [
+        {
+            "name": "Gabriele Soldati",
+            "email": "soldati.gabriele@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "phpunit/phpunit": "~7.0",
+        "orchestra/testbench": "3.6.*",
+        "codedungeon/phpunit-result-printer": "^0.6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "SoldatiGabriele\\PackageName\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SoldatiGabriele\\PackageName\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SoldatiGabriele\\PackageName\\ServiceProvider"
+            ]
+        }
+    }
+}
